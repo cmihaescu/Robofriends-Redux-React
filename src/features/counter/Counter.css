@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+.btns-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.counter {
+  display: flex;
+  flex-direction: row;
+}
+
+button, .button {
+  font-family: "Dancing Script", cursive;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background-color: #5c3c92;
+  font-weight: 700;
+  color: #00bfd8;
+  font-size: 1.1rem;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+button:hover {
+  background-color: #000000;
+  color: #dd4600;
+}
+
+.btn-increment {
+  margin-left: -20px;
+  z-index: 1;
+}
+.btn-decrement{
+  margin-right: -20px;
+  z-index: 1;
+}
+
+.count{
+  background-color: #5c3c92;
+  color: #00bfd8;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  margin:auto 0;
+  padding: 25px 50px;
+  z-index: 0;
+}
+.calculate{
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px 0 0 0;
+  z-index: 2;
+}
+p {
+  white-space: nowrap;
+  margin:0;
+}
+input {
+  margin: 2px 0 0 5px;
+  width: 40%;
+}
+.by-amount-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,10 +1,22 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(bisque, rgb(233, 171, 96));
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin:0 auto;
+  padding: 2% 0;
+  font-family: 'freshbotregular';
+  font-size: 600%;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: orange;
+  -webkit-text-stroke: 2px black;
+  transition: letter-spacing 1s; 
+  }
+
+h1:hover {
+  letter-spacing: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,20 +25,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +33,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'freshbotregular';
+  src: url('./freshbot-webfont.woff') format('woff'),
+       url('./freshbot-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
 }

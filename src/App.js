@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Counter from "./features/counter/Counter";
+import Robots from "./app/Components/Robots";
+import Search from "./app/Components/SearchBar";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>COUNTER</h1>
+      <Counter></Counter>
+      <h1>ROBOFRIENDS</h1>
+      <Search />
+      <Robots></Robots>
     </div>
   );
 }
